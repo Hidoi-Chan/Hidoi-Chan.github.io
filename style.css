@@ -1,0 +1,120 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: rgb(43, 42, 42);
+    width: 100%;
+    font-size: 16px;
+}
+
+#root {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+fieldset {
+    padding: 10px 20px 15px;
+}
+
+input[name='target'] {
+    display: none;
+}
+
+input[name='target']+label {
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+input[name='target']:checked+label {
+    background-color: rgb(100, 100, 236);
+    color: #fff;
+    cursor: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.slider__field {
+    width: 320px;
+    height: 44px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider__base {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 5px);
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 93, 93);
+    border-radius: 3px;
+}
+
+.slider__fill {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 0;
+    height: 10px;
+    width: 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 93, 93);
+    border-radius: 3px;
+}
+
+.slider__field#red .slider__fill {
+    background-color: rgb(206, 86, 86);
+}
+
+.slider__field#green .slider__fill {
+    background-color: rgb(86, 206, 86);
+}
+
+.slider__field#blue .slider__fill {
+    background-color: rgb(86, 86, 206);
+}
+
+.slider__thumb {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(206, 86, 86);
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    z-index: 5;
+}
+
+.slider__field#red .slider__thumb {
+    border: 1px solid rgb(206, 86, 86);
+}
+
+.slider__field#green .slider__thumb {
+    border: 1px solid rgb(86, 206, 86);
+}
+
+.slider__field#blue .slider__thumb {
+    border: 1px solid rgb(86, 86, 206);
+}
+
+.field {
+    width: 200px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(94, 93, 93);
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+}

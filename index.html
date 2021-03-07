@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root">
+        <fieldset name="target">
+            <legend>Select:</legend>
+
+            <input type="radio" id="text" name="target" value="text" checked>
+            <label for="text">color</label>
+            <input type="radio" id="background" name="target" value="background">
+            <label for="background">background-color</label>
+        </fieldset>
+
+        <div class="container">
+            <div class="sliders">
+                <div class="slider__field" id="red">
+                    <div class="slider__base"></div>
+                    <div class="slider__fill"></div>
+                    <div class="slider__thumb"></div>
+                </div>
+                <div class="slider__field" id="green">
+                    <div class="slider__base"></div>
+                    <div class="slider__fill"></div>
+                    <div class="slider__thumb"></div>
+                </div>
+                <div class="slider__field" id="blue">
+                    <div class="slider__base"></div>
+                    <div class="slider__fill"></div>
+                    <div class="slider__thumb"></div>
+                </div>
+            </div>
+            <div class="field">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minima adipisci, quae facilis magnam debitis.</p>
+                <p id="get-color"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
